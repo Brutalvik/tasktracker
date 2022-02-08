@@ -11,9 +11,13 @@ const TaskSlice = createSlice({
                 completed: false
             };
             state.push(newTask);
+        },
+        toggleCompletedTask: (state, action) => {
+            const index = state.findIndex((task) => task.id === action.payload.id);
+            state[index].completed = action.payload.completed;
         }
     }
 })
 
-export const { addTask } = TaskSlice.actions;
+export const { addTask, toggleCompletedTask } = TaskSlice.actions;
 export default TaskSlice.reducer;

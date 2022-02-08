@@ -1,8 +1,20 @@
 import React from 'react';
 import './Tasks.css'
 import Button from '../global/button/Button'
+import { useDispatch } from 'react-redux';
+import { toggleCompletedTask } from '../../redux/TaskSlice'
 
-const Task = ({ id, task, type}) => {
+const Task = ({ id, task, type, completed}) => {
+
+  const dispatch = useDispatch(0);
+
+  const handleChange = () => {
+    dispatch(
+      toggleCompletedTask({ id: id, completed: !completed})
+    )
+  }
+
+
   return (
     <>
         <div className="task-header">
@@ -14,7 +26,7 @@ const Task = ({ id, task, type}) => {
         </div>
         <br/>
         <div className="task">
-                <input type="checkbox"/>
+                <input type="checkbox" onChange={handleChange}/>
                 <p>{id}</p>
                 <p>{task}</p>
                 <Button className={"btn-delete"} text="Delete" type={type}/>
