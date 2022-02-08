@@ -52,7 +52,7 @@ const Task = ({ id, task, completed}) => {
         {
           isEditing ?
           <div className="task">
-                <input type="checkbox" />
+                <input type="checkbox" disabled={true}/>
                 <p>{id}</p>
                 <input type="textbox" onChange={(e) => setUpdate(e.target.value)}/>
                 <Button onClick={handleCancel} className={"btn-delete"} text="Cancel"/>
@@ -60,7 +60,7 @@ const Task = ({ id, task, completed}) => {
           </div>
           :
           <div className="task">
-                <input type="checkbox" onChange={handleChange} />
+                <input type="checkbox" onChange={handleChange} disabled={disabled}/>
                 <p>{id}</p>
                 <p>{task}</p>
                 <Button onClick={handleDelete} className={"btn-delete"} text="Delete"/>
