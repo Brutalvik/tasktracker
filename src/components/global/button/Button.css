@@ -1,8 +1,8 @@
 
 .btn-add {background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%)}
 .btn-add {
-    width: 90%;
-    margin: 10px;
+    width: 50%;
+    margin-left: 25px;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;

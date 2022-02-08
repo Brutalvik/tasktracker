@@ -5,6 +5,7 @@ const Header = ({ title, gettext }) => {
   const onTrigger = (event) => {
       event.preventDefault();
       gettext(event.target.value)
+      console.log(gettext)
   }
 
   return (
