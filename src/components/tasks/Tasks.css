@@ -32,10 +32,11 @@
     box-shadow: 5px 5px 15px 5px #000000;
     margin: auto;
     text-align: left;
+    font-size: 1vw;
 }
 
 p {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 h2 {

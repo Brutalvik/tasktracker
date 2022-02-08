@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
+import Completed from './components/completed/Completed'
 import { Tasks } from './components/tasks/Tasks';
 import { useDispatch } from 'react-redux';
 import { addTask } from './redux/TaskSlice'
@@ -28,6 +29,9 @@ function App({ inputvalue }) {
 
   return (
     <div className="App">
+      <div className="completed">
+        <Completed/>
+      </div>
       <form onSubmit={onSubmit}>
         <Header gettext={getValue}/>
         <Footer type="submit"/>

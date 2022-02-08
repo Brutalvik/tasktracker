@@ -7,3 +7,9 @@
   width: 70%;
   padding: 5%;;
 }
+
+.completed {
+  margin-top: -5%;
+  text-align: left;
+  width: 100%;
+}
