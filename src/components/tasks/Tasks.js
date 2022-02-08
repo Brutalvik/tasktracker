@@ -12,7 +12,7 @@ export const Tasks = () => {
             {
                 tasks.map((task) =>
                 <div className="task-block">
-                    <Task id={task.id} task={task.title} completed={task.completed}/>
+                    <Task id={task.id} task={task.title} completed={task.completed} tasks={tasks}/>
                 </div>)
             }
         </ul>

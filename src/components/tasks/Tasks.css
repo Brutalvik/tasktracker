@@ -31,7 +31,6 @@
     padding: 1%;
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
-    border-radius: 10px;
     margin: auto;
     text-align: left;
 }
@@ -48,4 +47,11 @@ input[type="checkbox"] {
     width: 2em;
     height: 2em;
     cursor: pointer;
+}
+
+input[type="textbox"] {
+    width: auto;
+    height: 40px !important;
+    border-radius: 10px;
+    font-size: 25px;
 }

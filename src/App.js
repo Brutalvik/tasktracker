@@ -30,9 +30,9 @@ function App({ inputvalue }) {
     <div className="App">
       <form onSubmit={onSubmit}>
         <Header gettext={getValue}/>
-        <Tasks/>
         <Footer type="submit"/>
       </form>
+        <Tasks/>  
     </div>
   );
 }
