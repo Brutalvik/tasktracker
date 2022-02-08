@@ -38,6 +38,10 @@ const Task = ({ id, task, completed}) => {
     dispatch(editTask({ id: id, title: update}))
   }
 
+  const handleError = () => {
+    alert("Error : Cannot update completed task!")
+  }
+
 
   return (
     <>
@@ -50,9 +54,9 @@ const Task = ({ id, task, completed}) => {
         </div>
         <br/>
         {
-          isEditing ?
+          isEditing && !disabled?
           <div className="task">
-                <input type="checkbox" disabled={true}/>
+                <input type="checkbox" disabled={true} />
                 <p>{id}</p>
                 <input type="textbox" onChange={(e) => setUpdate(e.target.value)}/>
                 <Button onClick={handleCancel} className={"btn-delete"} text="Cancel"/>
@@ -64,8 +68,8 @@ const Task = ({ id, task, completed}) => {
                 <p>{id}</p>
                 <p>{task}</p>
                 <Button onClick={handleDelete} className={"btn-delete"} text="Delete"/>
-                <Button onClick={handleEdit} className={"btn-edit"} text="Edit"/>
-        </div>
+                <Button onClick={disabled ? handleError : handleEdit} className={"btn-edit"} text="Edit"/>
+          </div>
         }
       </>
     );

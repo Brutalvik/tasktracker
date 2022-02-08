@@ -47,6 +47,7 @@ input[type="checkbox"] {
     width: 2em;
     height: 2em;
     cursor: pointer;
+    background-color: green;
 }
 
 input[type="textbox"] {
