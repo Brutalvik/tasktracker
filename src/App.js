@@ -32,7 +32,9 @@ function App({ inputvalue }) {
         <Header gettext={getValue}/>
         <Footer type="submit"/>
       </form>
+      <div>
         <Tasks/>  
+      </div>  
     </div>
   );
 }

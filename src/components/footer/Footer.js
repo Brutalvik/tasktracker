@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from '../global/button/Button'
 import './Footer.css'
+import '../global/button/Button.css'
 
-const Footer = ({ type, onSubmit }) => {
+const Footer = ({ type }) => {
   
   return (
     <>
