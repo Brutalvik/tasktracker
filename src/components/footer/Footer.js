@@ -6,13 +6,13 @@ const Footer = ({ type, onSubmit }) => {
   
   return (
     <>
-        <div className="footer">
-            <div>
+        <>
+            <div className="footer">
                 <Button className={"btn-add"} 
                         text="Add" 
                         type={type}/>
             </div>
-        </div>
+        </>
     </>
   )
 }
