@@ -10,7 +10,7 @@ function App({ inputvalue }) {
 
   const [value, setValue] = useState();
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(0);
 
   const onSubmit = (e) => {
     e.preventDefault();

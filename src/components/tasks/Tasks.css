@@ -1,15 +1,38 @@
 .task {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 2fr 1fr 1fr;
     grid-auto-rows: auto;
     grid-gap: 2em;
-    background-color: lightgrey;
+    background-color: rgb(173, 189, 204);
     width: 90%;
     height: auto;
+    align-items: center;
+    padding: 1%;
     margin-left: 5%;
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
     border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.task-block {
+    margin-bottom: 5%;
+}
+
+.task-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-auto-rows: auto;
+    grid-gap: 2em;
+    background-color: rgb(216, 218, 221);
+    width: 90%;
+    height: auto;
+    padding: 1%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 10px;
+    margin: auto;
 }
 
 p {

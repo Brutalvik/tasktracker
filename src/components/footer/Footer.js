@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = ({ type, onSubmit }) => {
   
   return (
-    <div className="container">
+    <>
         <div className="footer">
             <div>
                 <Button className={"btn-add"} 
@@ -13,7 +13,7 @@ const Footer = ({ type, onSubmit }) => {
                         type={type}/>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 

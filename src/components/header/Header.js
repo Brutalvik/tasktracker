@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './Header.css'
 
 const Header = ({ title, gettext }) => {
-
-  const [text, settext] = useState();
 
   const onTrigger = (event) => {
       event.preventDefault();
@@ -11,7 +8,7 @@ const Header = ({ title, gettext }) => {
   }
 
   return (
-    <div className="container">
+    <>
       <div>
       <h1 className="title">{ title }</h1>
       </div>
@@ -20,12 +17,12 @@ const Header = ({ title, gettext }) => {
         className="input-box" 
         onChange={onTrigger}/>
       </div>
-    </div>
+    </>
   )
 }
 
 Header.defaultProps = {
-    title: 'Task Tracker'
+    title: 'To Do Tracker'
 }
 
 export default Header

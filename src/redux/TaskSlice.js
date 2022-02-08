@@ -2,23 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const TaskSlice = createSlice({
     name: "Task",
-    initialState: [
-        {
-            id: Date.now(),
-            title: "Task 1",
-            completed: false
-        },
-        {
-            id: Date.now(),
-            title: "Task 2",
-            completed: false
-        },
-        {
-            id: Date.now(),
-            title: "Task 3",
-            completed: true
-        }
-    ],
+    initialState: [],
     reducers: {
         addTask: (state, action) => {
             const newTask = {
