@@ -11,8 +11,8 @@ export const Tasks = () => {
         <div>
             {
                 tasks.map((task) =>
-                <div className="task-block">
-                    <Task key={task.id} id={task.id} task={task.title} completed={task.completed} tasks={tasks}/>
+                <div key={task.id} className="task-block">
+                    <Task id={task.id} task={task.title} completed={task.completed} tasks={tasks}/>
                 </div>)
             }
         </div>

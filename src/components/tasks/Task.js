@@ -72,7 +72,7 @@ const Task = ({ id, task, completed}) => {
         <div className="task-header">
           <h2>Mark</h2>
           {/* inline styling example */}
-          <h2 style={{"margin-left": "10px"}}>ID</h2>
+          <h2 style={{"marginLeft": "10px"}}>ID</h2>
           <h2>Task</h2>
           <h2>Action</h2>
         </div>

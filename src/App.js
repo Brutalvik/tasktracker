@@ -7,7 +7,7 @@ import { Tasks } from './components/tasks/Tasks';
 import { useDispatch } from 'react-redux';
 import { addTask } from './redux/TaskSlice'
 
-function App({ inputvalue }) {
+function App() {
 
   const [value, setValue] = useState();
 
@@ -16,7 +16,7 @@ function App({ inputvalue }) {
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(
-      addTask({ 
+      addTask({
           title: value,
       })
     );
