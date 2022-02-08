@@ -1,11 +1,14 @@
 .App {
-  margin: 5%;
+  margin: auto;
+  margin-top: 10%;
   text-align: center;
+  background-color: darkgrey;
+  width: 50%;
 }
 
 .container {
   margin: auto;
   height: auto;
-  width: 50%;
+  width: 100%;
   background-color: darkgrey;
 }

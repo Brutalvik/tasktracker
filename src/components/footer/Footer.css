@@ -2,7 +2,7 @@
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-auto-rows: auto;
-   grid-gap: 1em;
+   padding-bottom: 5%;
 }
 
 .btn-add {background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%)}
@@ -19,6 +19,8 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.5vw;
+    -webkit-box-shadow: 5px 5px 15px 5px #1b1147; 
+    box-shadow: 5px 5px 15px 5px #18174d;
  }
 
  .btn-add:hover {
@@ -50,6 +52,8 @@
       display: block;
       cursor: pointer;
       font-size: 1.5vw;
+      -webkit-box-shadow: 5px 5px 15px 5px #2c0202; 
+      box-shadow: 5px 5px 15px 5px #240101;
   }
 
   .btn-delete:hover {
@@ -63,4 +67,3 @@
    background-position: left center; /* change the direction of the change here */
    color: #fff;
 }
- 
